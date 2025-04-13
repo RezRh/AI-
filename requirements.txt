@@ -1,0 +1,18 @@
+# Core dependencies
+torch>=2.0.0
+transformers>=4.30.0
+numpy>=1.24.0
+requests>=2.31.0
+
+# Voice processing
+TTS>=0.17.0
+speech_recognition>=3.10.0
+
+# Emotion detection
+tensorflow>=2.13.0  # Required for some audio processing models
+librosa>=0.10.0  # Audio feature extraction
+
+# Logging and utilities
+logging>=0.5.1.2
+tempfile>=0.0.1
+base64>=1.0.0

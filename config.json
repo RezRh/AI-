@@ -1,0 +1,36 @@
+{
+    "models": {
+        "reasoning": {
+            "provider": "claude",
+            "fallback": "deepseek",
+            "api_key_env": "CLAUDE_API_KEY"
+        },
+        "planning": {
+            "provider": "deepseek",
+            "fallback": null,
+            "api_key_env": "DEEPSEEK_API_KEY"
+        },
+        "conversation": {
+            "provider": "chatgpt",
+            "fallback": "deepseek",
+            "api_key_env": "OPENAI_API_KEY"
+        }
+    },
+    "memory": {
+        "provider": "chroma",
+        "collection_name": "assistant_memory",
+        "persist_directory": "./chroma_db"
+    },
+    "voice": {
+        "provider": "coqui",
+        "voice_id": "default"
+    },
+    "image": {
+        "provider": "stable-diffusion"
+    },
+    "credit_limits": {
+        "claude": 1000,
+        "deepseek": 5000,
+        "chatgpt": 2000
+    }
+}
